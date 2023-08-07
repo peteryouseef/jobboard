@@ -145,6 +145,10 @@ nav {
   top: 0;
   z-index: 10000;
   background-color: rgba(255, 255, 255, 0.500);
+  transition: 0.3s;
+}
+nav:hover {
+  background-color: rgba(255, 255, 255, 0.750);
 }
 @media (max-width:991px) {
   nav {
