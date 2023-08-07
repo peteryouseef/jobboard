@@ -2195,6 +2195,12 @@ margin-bottom: 0;
   align-items: center;
   gap: 20px;
 }
+@media (max-width:400px) {
+  .blog-details .details .body .comments .info {
+    flex-direction: column;
+    align-items: baseline;
+  }
+}
 .blog-details .details .body .comments .info .name a {
   transition: 0.3s;
 }
