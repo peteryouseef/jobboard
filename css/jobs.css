@@ -444,11 +444,6 @@ main {
     height: 500px;
   }
 }
-@media (max-width:767px) {
-  main {
-    height: 450px;
-  }
-}
 main .back-image {
 position: relative;
 z-index: 1;
@@ -460,15 +455,15 @@ position: absolute;
 right: 0;
 top: 0px;
 }
-@media (max-width:992px) {
+@media (max-width:1200px) {
   main .back-image img {
-    display: none;
+    width: 650px;
+    height: 550px;
   }
 }
 @media (max-width:1100px) {
   main .back-image img {
-    width: 628px;
-    height: 550px;
+    display: none;
   }
 }
 main .section-label {
@@ -482,6 +477,11 @@ main .section-label h2 {
   font-size: 400px;
   font-weight: 1000;
   color: white;
+}
+@media (max-width:1200px) {
+  main .section-label h2 {
+    font-size: 350px;
+  }
 }
 @media (max-width:1100px) {
   main .section-label h2 {
@@ -501,6 +501,11 @@ main .section-label h2 {
     font-size: 120px;
   }
 }
+@media (max-width:400px) {
+  main .section-label h2 {
+    font-size: 100px;
+  }
+}
 /* start container  */
 main  .main-intro {
   position: relative;
@@ -508,9 +513,15 @@ main  .main-intro {
   display: flex;
   padding-top: 150px;
 }
+@media (max-width:1100px) {
+  main  .main-intro {
+    align-items: center;
+  }
+}
 @media (max-width:992px) {
   main  .main-intro {
     justify-content: center;
+    padding-top: 150px;
   }
 }
 main  .main-intro .text {
@@ -548,6 +559,11 @@ main  .main-intro .text .intro-links {
 display: flex;
 gap: 20px;
 }
+@media (max-width:480px) {
+  main  .main-intro .text .intro-links {
+    flex-direction: column;
+  }
+}
 main  .main-intro .text .intro-links a {
 display: block;
 padding: 17px 40px;
@@ -567,14 +583,25 @@ border-radius: 5px;
     padding: 10px 15px;
   }
 }
+@media (max-width:480px) {
+  main  .main-intro .text .intro-links a {
+    width: fit-content;
+  }
+}
 main  .main-intro .image img {
     width: 630px;
     height: 486px;
 }
+@media (max-width:1200px) {
+  main  .main-intro .image img {
+    width: 470px;
+    height: 400px;
+  }
+}
 @media (max-width:1100px) {
   main  .main-intro .image img {
-    width: 500px;
-    height: 400px;
+    width: 460px;
+    height: 370px;
   }
 }
 @media (max-width:992px) {
@@ -720,6 +747,11 @@ line-height: 1.8;
   z-index: 0;
   color: white;
 }
+@media (max-width:1200px) {
+.about .talent h2 {
+  font-size: 225px;
+}
+}
 @media (max-width:1100px) {
 .about .talent h2 {
   font-size: 200px;
@@ -741,6 +773,11 @@ line-height: 1.8;
   font-size: 80px;
 }
 } 
+@media (max-width:400px) {
+.about .talent h2 {
+  font-size: 70px;
+}
+}
 .about .container .about-content {
   display: flex;
   gap: 20px;
